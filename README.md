@@ -7,21 +7,9 @@ Prerequisites
 Dependencies
 ------------
 
+Django:
+
     pip install django==1.4.1
-
-    pip install WebHelpers
-
-    pip install django-mako
-
-    pip install docutils
-
-    pip install lettuce
-
-    pip install nose
-
-    pip install blessings
-
-    pip install tabula
 
     pip install django-http-proxy
 
@@ -29,9 +17,29 @@ Dependencies
 
     pip install pyjade
 
+    pip install django-mako
+
+    pip install WebHelpers
+
+    pip install docutils
+
+cbtop:
+
+    pip install blessings
+
+    pip install tabula
+
+Couchbase:
+
     pip install requests==0.14.0
 
     pip install couchbase
+
+Testing:
+
+    pip install lettuce
+
+    pip install nose
 
 Web application setup
 ---------------------
