@@ -9,6 +9,10 @@ Dependencies
 
     pip install django==1.4.1
 
+    pip install WebHelpers
+
+    pip install django-mako
+
     pip install docutils
 
     pip install lettuce

@@ -1,16 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>Flot demo</title>
+<%namespace name="header" file="header.mako"/>
+${header.html('Flot demo')}
 
-    <script type='text/javascript' src='/static/scripts/seriesly.js'></script>
-    <script type='text/javascript' src='/static/scripts/graph.js'></script>
-    <script type='text/javascript' src='/static/scripts/jquery-1.7.min.js'></script>
-    <script type='text/javascript' src='/static/scripts/jquery.flot.js'></script>
-    <script type='text/javascript' src='/static/scripts/jquery.flot.selection.js'></script>
-</head>
 <body>
 <div id="placeholder" style="width:900px;height:350px;"></div>
 <div id="overview" style="margin-left:50px;margin-top:20px;width:800px;height:140px"></div>
@@ -18,6 +8,7 @@
     <button id="add">Add metric</button>
 </div>
 
+<script type='text/javascript' src='/static/scripts/graph.js'></script>
 <script type='text/javascript'>
     $(function () {
         var seriesly = new SERIESLY.Seriesly("ns_db"),

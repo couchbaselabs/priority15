@@ -1,31 +1,15 @@
-from django.shortcuts import render_to_response
 from django.http import HttpResponse
+from djangomako.shortcuts import render_to_response
 
 
 def main(request, demo):
     if demo == 'flot':
-        return flot(request)
+        return render_to_response('demos/flot.mako', {})
     elif demo == 'rickshaw':
-        return rickshaw(request)
+        return render_to_response('demos/rickshaw.mako', {})
     elif demo == 'nvd3':
-        return nvd3(request)
+        return render_to_response('demos/nvd3.mako', {})
     elif demo == 'cubism':
-        return cubism(request)
+        return render_to_response('demos/cubism.mako', {})
     else:
         return HttpResponse(content="Demo doesn't exist", status=404)
-
-
-def flot(request):
-    return render_to_response('demos/flot.html')
-
-
-def rickshaw(request):
-    return render_to_response('demos/rickshaw.html')
-
-
-def nvd3(request):
-    return render_to_response('demos/nvd3.html')
-
-
-def cubism(request):
-    return render_to_response('demos/cubism.html')
